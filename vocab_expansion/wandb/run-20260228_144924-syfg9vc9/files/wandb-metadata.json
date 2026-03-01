@@ -1,0 +1,119 @@
+{
+  "os": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.19",
+  "startedAt": "2026-02-28T22:49:24.409800Z",
+  "args": [
+    "--model-name-or-path",
+    "checkpoints/all-MiniLM-L6-v2-bioasq-expanded",
+    "--coverage-jsonl",
+    "data/msmarco_added_token_coverage.jsonl",
+    "--added-ngrams-file",
+    "AutoPhrase/models/BioASQ/added_ngrams_10pct.tsv",
+    "--output-dir",
+    "checkpoints/all-MiniLM-L6-v2-bioasq-finetuned-coverage",
+    "--epochs",
+    "1",
+    "--batch-size",
+    "64",
+    "--learning-rate",
+    "2e-5"
+  ],
+  "program": "/home/ravisri/code/courses/CS263Project/vocab_expansion/scripts/finetune_mini_bioasq.py",
+  "codePath": "vocab_expansion/scripts/finetune_mini_bioasq.py",
+  "codePathLocal": "scripts/finetune_mini_bioasq.py",
+  "git": {
+    "remote": "https://github.com/yubenjamin2022/CS263Project",
+    "commit": "784cef13e3933ec516fbdf32ab8bd39b84f76fbf"
+  },
+  "email": "ravisrivk@gmail.com",
+  "root": "/home/ravisri/code/courses/CS263Project/vocab_expansion",
+  "host": "mint2.cs.ucla.edu",
+  "executable": "/data1/ravi/miniconda3/envs/python310/bin/python",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA RTX A5000",
+  "gpu_count": 10,
+  "disk": {
+    "/": {
+      "total": "21464350720",
+      "used": "16616984576"
+    }
+  },
+  "memory": {
+    "total": "540656078848"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-40a403e4-02d0-541e-a5ee-901dbea96a63"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-0928a941-376c-73fa-641d-9ab89c2c7b68"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-cb8a5d57-06b4-6aff-2536-281ddec475ba"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-50a7adcb-640a-17e0-b11c-483c01dae81e"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-00e98c67-e57c-0e25-0184-d06df322fc86"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-0743fef1-6c1f-a6cf-f3e3-a1aa8f912f40"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-81302149-9059-f67e-43b6-186f51ebdf9f"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-e647685e-0300-5812-787c-8f8cdaefb5d4"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-62548885-b1dc-4b78-766f-121adfcffe92"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-82a18ba1-b21f-94ef-e9ba-5ef63e4a3542"
+    }
+  ],
+  "cudaVersion": "12.3",
+  "writerId": "owj0u0n4udpk9qu72rg4noh5hfe4ga0p"
+}

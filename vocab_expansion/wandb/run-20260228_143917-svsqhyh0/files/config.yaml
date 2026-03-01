@@ -1,0 +1,424 @@
+_wandb:
+    value:
+        cli_version: 0.24.2
+        e:
+            iialx874mvrq2m6osc2d4bckauap52ri:
+                args:
+                    - --model-name-or-path
+                    - checkpoints/all-MiniLM-L6-v2-bioasq-expanded
+                    - --coverage-jsonl
+                    - data/msmarco_added_token_coverage.jsonl
+                    - --added-ngrams-file
+                    - AutoPhrase/models/BioASQ/added_ngrams_10pct.tsv
+                    - --output-dir
+                    - checkpoints/all-MiniLM-L6-v2-bioasq-finetuned-coverage
+                    - --epochs
+                    - "1"
+                    - --batch-size
+                    - "64"
+                    - --learning-rate
+                    - "2e-5"
+                codePath: vocab_expansion/scripts/finetune_mini_bioasq.py
+                codePathLocal: scripts/finetune_mini_bioasq.py
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.3"
+                disk:
+                    /:
+                        total: "21464350720"
+                        used: "16616984576"
+                email: ravisrivk@gmail.com
+                executable: /data1/ravi/miniconda3/envs/python310/bin/python
+                git:
+                    commit: 784cef13e3933ec516fbdf32ab8bd39b84f76fbf
+                    remote: https://github.com/yubenjamin2022/CS263Project
+                gpu: NVIDIA RTX A5000
+                gpu_count: 10
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-40a403e4-02d0-541e-a5ee-901dbea96a63
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-0928a941-376c-73fa-641d-9ab89c2c7b68
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-cb8a5d57-06b4-6aff-2536-281ddec475ba
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-50a7adcb-640a-17e0-b11c-483c01dae81e
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-00e98c67-e57c-0e25-0184-d06df322fc86
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-0743fef1-6c1f-a6cf-f3e3-a1aa8f912f40
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-81302149-9059-f67e-43b6-186f51ebdf9f
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-e647685e-0300-5812-787c-8f8cdaefb5d4
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-62548885-b1dc-4b78-766f-121adfcffe92
+                    - architecture: Ampere
+                      cudaCores: 8192
+                      memoryTotal: "25757220864"
+                      name: NVIDIA RTX A5000
+                      uuid: GPU-82a18ba1-b21f-94ef-e9ba-5ef63e4a3542
+                host: mint2.cs.ucla.edu
+                memory:
+                    total: "540656078848"
+                os: Linux-5.15.0-91-generic-x86_64-with-glibc2.35
+                program: /home/ravisri/code/courses/CS263Project/vocab_expansion/scripts/finetune_mini_bioasq.py
+                python: CPython 3.10.19
+                root: /home/ravisri/code/courses/CS263Project/vocab_expansion
+                startedAt: "2026-02-28T22:39:17.108100Z"
+                writerId: iialx874mvrq2m6osc2d4bckauap52ri
+        m:
+            - "1": train/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+            "3":
+                - 7
+                - 66
+            "4": 3.10.19
+            "5": 0.24.2
+            "6": 4.57.3
+            "9":
+                "1": transformers_trainer
+            "12": 0.24.2
+            "13": linux-x86_64
+accelerator_config:
+    value:
+        dispatch_batches: null
+        even_batches: true
+        gradient_accumulation_kwargs: null
+        non_blocking: false
+        split_batches: false
+        use_seedable_sampler: true
+adafactor:
+    value: false
+adam_beta1:
+    value: 0.9
+adam_beta2:
+    value: 0.999
+adam_epsilon:
+    value: 1e-08
+auto_find_batch_size:
+    value: false
+average_tokens_across_devices:
+    value: true
+batch_eval_metrics:
+    value: false
+batch_sampler:
+    value: batch_sampler
+bf16:
+    value: false
+bf16_full_eval:
+    value: false
+data_seed:
+    value: null
+dataloader_drop_last:
+    value: false
+dataloader_num_workers:
+    value: 0
+dataloader_persistent_workers:
+    value: false
+dataloader_pin_memory:
+    value: true
+dataloader_prefetch_factor:
+    value: null
+ddp_backend:
+    value: null
+ddp_broadcast_buffers:
+    value: false
+ddp_bucket_cap_mb:
+    value: null
+ddp_find_unused_parameters:
+    value: null
+ddp_timeout:
+    value: 1800
+debug:
+    value: []
+deepspeed:
+    value: null
+disable_tqdm:
+    value: false
+do_eval:
+    value: false
+do_predict:
+    value: false
+do_train:
+    value: false
+eval_accumulation_steps:
+    value: null
+eval_delay:
+    value: 0
+eval_do_concat_batches:
+    value: true
+eval_on_start:
+    value: false
+eval_steps:
+    value: 0
+eval_strategy:
+    value: "no"
+eval_use_gather_object:
+    value: false
+fp16:
+    value: false
+fp16_backend:
+    value: auto
+fp16_full_eval:
+    value: false
+fp16_opt_level:
+    value: O1
+fsdp:
+    value: []
+fsdp_config:
+    value:
+        min_num_params: 0
+        xla: false
+        xla_fsdp_grad_ckpt: false
+        xla_fsdp_v2: false
+fsdp_min_num_params:
+    value: 0
+fsdp_transformer_layer_cls_to_wrap:
+    value: null
+full_determinism:
+    value: false
+gradient_accumulation_steps:
+    value: 1
+gradient_checkpointing:
+    value: false
+gradient_checkpointing_kwargs:
+    value: null
+greater_is_better:
+    value: null
+group_by_length:
+    value: false
+half_precision_backend:
+    value: auto
+hub_always_push:
+    value: false
+hub_model_id:
+    value: null
+hub_private_repo:
+    value: null
+hub_revision:
+    value: null
+hub_strategy:
+    value: every_save
+hub_token:
+    value: <HUB_TOKEN>
+ignore_data_skip:
+    value: false
+include_for_metrics:
+    value: []
+include_inputs_for_metrics:
+    value: false
+include_num_input_tokens_seen:
+    value: "no"
+include_tokens_per_second:
+    value: false
+jit_mode_eval:
+    value: false
+label_names:
+    value: null
+label_smoothing_factor:
+    value: 0
+learning_rate:
+    value: 5e-05
+length_column_name:
+    value: length
+liger_kernel_config:
+    value: null
+load_best_model_at_end:
+    value: false
+local_rank:
+    value: 0
+log_level:
+    value: passive
+log_level_replica:
+    value: warning
+log_on_each_node:
+    value: true
+logging_dir:
+    value: checkpoints/model/runs/Feb28_14-39-14_mint2.cs.ucla.edu
+logging_first_step:
+    value: false
+logging_nan_inf_filter:
+    value: true
+logging_steps:
+    value: 500
+logging_strategy:
+    value: steps
+lr_scheduler_type:
+    value: linear
+max_grad_norm:
+    value: 1
+max_steps:
+    value: -1
+metric_for_best_model:
+    value: null
+mp_parameters:
+    value: ""
+multi_dataset_batch_sampler:
+    value: round_robin
+neftune_noise_alpha:
+    value: null
+no_cuda:
+    value: false
+num_train_epochs:
+    value: 1
+optim:
+    value: adamw_torch_fused
+optim_args:
+    value: null
+optim_target_modules:
+    value: null
+output_dir:
+    value: checkpoints/model
+overwrite_output_dir:
+    value: false
+parallelism_config:
+    value: null
+past_index:
+    value: -1
+per_device_eval_batch_size:
+    value: 64
+per_device_train_batch_size:
+    value: 64
+per_gpu_eval_batch_size:
+    value: null
+per_gpu_train_batch_size:
+    value: null
+prediction_loss_only:
+    value: true
+project:
+    value: huggingface
+prompts:
+    value: null
+push_to_hub:
+    value: false
+push_to_hub_model_id:
+    value: null
+push_to_hub_organization:
+    value: null
+push_to_hub_token:
+    value: <PUSH_TO_HUB_TOKEN>
+ray_scope:
+    value: last
+remove_unused_columns:
+    value: true
+report_to:
+    value:
+        - tensorboard
+        - wandb
+restore_callback_states_from_checkpoint:
+    value: false
+resume_from_checkpoint:
+    value: null
+run_name:
+    value: null
+save_on_each_node:
+    value: false
+save_only_model:
+    value: false
+save_safetensors:
+    value: true
+save_steps:
+    value: 500
+save_strategy:
+    value: "no"
+save_total_limit:
+    value: 0
+seed:
+    value: 42
+skip_memory_metrics:
+    value: true
+tf32:
+    value: null
+torch_compile:
+    value: false
+torch_compile_backend:
+    value: null
+torch_compile_mode:
+    value: null
+torch_empty_cache_steps:
+    value: null
+torchdynamo:
+    value: null
+tpu_metrics_debug:
+    value: false
+tpu_num_cores:
+    value: null
+trackio_space_id:
+    value: trackio
+use_cpu:
+    value: false
+use_legacy_prediction_loop:
+    value: false
+use_liger_kernel:
+    value: false
+use_mps_device:
+    value: false
+warmup_ratio:
+    value: 0
+warmup_steps:
+    value: 0
+weight_decay:
+    value: 0
